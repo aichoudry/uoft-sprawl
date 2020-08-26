@@ -1,0 +1,16 @@
+nav {
+  font-weight: bold;
+  background-color: white;
+}
+
+nav a {
+  color: var(--color-secondary);
+}
+
+nav .logo {
+  font-size: 24px;
+}
+
+nav .campus {
+  font-size: 18px;
+}

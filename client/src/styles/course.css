@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* POSITIONAL (grid, padding, margin, flex...) */
+.course-grid {
+  margin: 3rem 5rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr auto auto auto auto 1fr;
+  gap: 3rem;
+  grid-template-areas:
+    "nav nav"
+    "course-body course-image"
+    "requirements requirements"
+    "timings timings"
+    "ratings ratings"
+    "footer footer";
+}
+
+/* NAV */
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .campus {
+  width: 44.4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* INPUT */
+.input-container-float {
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+  background-color: var(--color-bg);
+  width: max-content;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.input-container-float input {
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.input-container-float button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 16px;
+}
+/* COURSE BODY */
+.course-body {
+  grid-area: course-body;
+}
+.course-body h4 {
+  padding-bottom: 0.3em;
+}
+
+/* COURSE IMAGE */
+.course-image {
+  grid-area: course-image;
+  display: flex;
+}
+
+/* COURSE REQUIREMENTS */
+.course-requirements {
+  grid-area: requirements;
+}
+.course-requirements div {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* TABLES */
+.terms li {
+  display: inline-block;
+  padding-right: 1em;
+}
+.terms {
+  padding-bottom: 1em;
+}
+
+.timings {
+  grid-area: timings;
+}
+.ratings {
+  grid-area: ratings;
+}
+.timings .ratings {
+  width: fit-content;
+}
+table {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+}
+td {
+  padding: 1em;
+}
+th {
+  padding-bottom: 1em;
+}
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  font-weight: bold;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 900px) {
+  /* NAV */
+  .course-grid {
+    margin: 1rem 1rem 0 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+  /* NAV */
+  nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  nav .campus {
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
+  }
+  nav .campus a {
+    padding-right: 1rem;
+  }
+
+  /* MAIN */
+  .input-container-float {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .course-body {
+    grid-area: course-body / course-body / course-image / course-image;
+  }
+  .course-image {
+    display: none;
+  }
+  .terms li {
+    padding-right: 1em;
+  }
+  .timings h1,
+  .ratings h1 {
+    text-align: left;
+  }
+  .timings ul,
+  .ratings ul {
+    text-align: left;
+  }
+  /* FOOTER */
+  footer {
+    grid-area: footer;
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+}

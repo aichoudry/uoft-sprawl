@@ -1,0 +1,32 @@
+table {
+  box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.terms li {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+table td {
+  font-size: 18px;
+}
+
+table tr {
+  border-radius: 10px;
+}
+
+tr:nth-child(2n) {
+  background-color: var(--color-primary-light);
+}
+
+td:nth-child(1) {
+  font-weight: 600;
+}
+
+th {
+  font-size: 20px;
+  font-weight: 600;
+}

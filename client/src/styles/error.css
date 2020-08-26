@@ -1,0 +1,42 @@
+.error-grid {
+  display: grid;
+  margin: 3rem 5rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto auto 1fr;
+  gap: 0rem;
+  grid-template-areas:
+    "nav nav"
+    "main0 main1"
+    "main2 main3"
+    "footer footer";
+}
+
+.error-grid img {
+  grid-area: main1 / main1 / main3 / main3;
+}
+
+.error-text {
+  grid-area: main0 / main0/ main2 / main2;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.error-grid h1 {
+  font-size: 78px;
+}
+
+@media only screen and (max-width: 900px) {
+  .error-grid img {
+    grid-area: main2 / main2/ main3 / main3;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .error-text {
+    grid-area: main0 / main0 / main1 / main1;
+    text-align: center;
+  }
+}

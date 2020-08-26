@@ -1,0 +1,15 @@
+.course-body h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+}
+.course-body h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+.course-body p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+}

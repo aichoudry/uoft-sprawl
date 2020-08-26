@@ -1,0 +1,21 @@
+.course-requirements {
+  border-radius: 10px;
+}
+.course-requirements p {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+}
+.course-requirements div {
+  border-radius: 10px;
+}
+.course-requirements .pre {
+  background-color: var(--color-em2);
+}
+.course-requirements .co {
+  background-color: var(--color-em1);
+}
+.course-requirements .anti {
+  background-color: var(--color-em3);
+}
