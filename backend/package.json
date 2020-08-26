@@ -1,0 +1,16 @@
+{
+  "name": "uoft-flow",
+  "version": "1.0.0",
+  "description": "Explore UTM courses",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Abdurrahman Choudry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nikel": "^1.0.1"
+  }
+}
